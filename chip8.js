@@ -110,19 +110,19 @@ class Chip8 {
                 break;
 
             case 0x7000:
-                this.V[X] = (this.V[X] + NN);
+                this.V[X] = (this.V[X] + NN); 
                 this.pc += 2;
                 break;
 
-            case 0xA000:
+            case 0xA000: 
                 this.I = NN; 
                 this.pc += 2;
-                break;
+                break;  
 
             case 0xD000:
                 var x = this.V[X];
-                var y = this.V[Y];
-                this.V[0xF] = 0;
+                var y = this.V[Y];a
+                this.V[0xF] = 0; 
 
                 for (var row = 0; row <= N; row++) {
                     var pixel = this.memory[this.I + row];
