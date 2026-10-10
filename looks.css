@@ -1,0 +1,70 @@
+body {  
+  background: black;
+  color: white;
+  font-family: monospace;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 16px;
+  margin: 0 0 12px;
+}
+
+canvas {
+  background: black;
+  border: 1px solid white;
+  image-rendering: pixelated;
+  width: 512px;
+  height: 256px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+#keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 40px);
+  gap: 4px;
+  margin-bottom: 12px;
+}
+
+#keypad button {
+  background: black;
+  color: white;
+  border: 1px solid white;
+  font-family: monospace;
+  font-size: 14px;
+  padding: 8px 0;
+  cursor: pointer;
+}
+
+#keypad button.active {
+  background: white;
+  color: black;
+}
+
+#controls {
+  margin-bottom: 12px;
+}
+
+#controls button,
+#controls label {
+  background: black;
+  color: white;
+  border: 1px solid white;
+  font-family: monospace;
+  font-size: 12px;
+  padding: 6px 10px;
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+#controls input[type=file] {
+  display: none;
+}
+
+#debug {
+  font-size: 12px;
+  margin: 0;
+  white-space: pre;
+}
