@@ -113,7 +113,7 @@ class Chip8 {
                 this.V[X] = (this.V[X] + NN);
                 this.pc += 2;
                 break;
- 
+
             case 0xA000:
                 this.I = NN; 
                 this.pc += 2;
