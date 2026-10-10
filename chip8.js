@@ -115,7 +115,7 @@ class Chip8 {
                 break;
 
             case 0xA000:
-                this.I = NN;
+                this.I = NN; 
                 this.pc += 2;
                 break;
 
