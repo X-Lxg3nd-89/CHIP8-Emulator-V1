@@ -11,7 +11,7 @@ h1 {
   margin: 0 0 12px;
 }
 
-canvas {
+canvas { 
   background: black;
   border: 1px solid white;
   image-rendering: pixelated;
