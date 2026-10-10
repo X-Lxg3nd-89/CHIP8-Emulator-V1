@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>crescent-chip8</title>
+  <link rel="stylesheet" href="looks.css">
+</head>
+<body>
+
+  <h1>crescent-chip8</h1>
+
+  <canvas id="screen" width="64" height="32"></canvas>
+
+  <div id="keypad"></div>
+
+  <div id="controls">
+    <button id="pause">pause</button>
+    <button id="reset">reset</button>
+    <label>load rom <input type="file" id="rom" accept=".ch8"></label>
+  </div>
+
+  <pre id="debug">pc 0200  i 0000  cycles 0</pre>
+
+  <script src="chip8.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
